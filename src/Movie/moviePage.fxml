@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="546.0" style="-fx-background-color: ffe018;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.MoviePageController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="485.0" minWidth="10.0" prefWidth="155.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="485.0" minWidth="10.0" prefWidth="210.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="485.0" minWidth="10.0" prefWidth="182.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="130.0" minHeight="0.0" prefHeight="85.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="344.0" minHeight="10.0" prefHeight="235.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fx:id="imageView" fitHeight="189.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Text fx:id="jieshao" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1" />
+      <ListView fx:id="comment" prefHeight="185.0" prefWidth="257.0" style="-fx-background-color: #ffe018;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <ImageView fitHeight="90.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+         <image>
+            <Image url="@Logo_Large.png" />
+         </image>
+      </ImageView>
+      <Button mnemonicParsing="false" onAction="#CommentIt" text="Comment" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
